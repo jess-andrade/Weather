@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div class="container-content">
+
+    <form [formGroup]="formWeather" class="form-container">
+      <input type="text" name="city" class="form-control" placeholder="Insert city's name" formControlName="city">
+      <input type="submit" class="btn btn-outline-light" value="Send" (click)="send()">
+    </form>
+
+    <div class="card text-white bg-warning">
+      <div class="card-header d-flex justify-content-center align-items-center">
+        <h2>{{displayCity}}</h2>
+        <p><img src="{{iconUrl}}" alt="weather img" width="100px"></p>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text">Summary: {{summary}}</p>
+        <p class="card-text">Temperature: {{temperature}} °C</p>
+        <p class="card-text">Feels Like: {{feelsLikeTemp}} °C</p>
+        <p class="card-text">Pressure: {{pressure}} km/h </p>
+        <p class="card-text">Humidity: {{humidity}}%</p>
+      </div>
+    </div>
+  </div>

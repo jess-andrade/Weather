@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #17a2b8;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 0px;
+
+  padding: 25px;
+  border-radius: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.form-control {
+  border-radius: 5px;
+  opacity: 0.6;
+
+  width: 340px;
+
+}
+
+.card {
+  width: 340px;
+
+}
