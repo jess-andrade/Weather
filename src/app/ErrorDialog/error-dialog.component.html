@@ -1,0 +1,11 @@
+<mat-dialog-content>
+  <mat-icon *ngIf="icon" style="margin-right: 0.25em">{{
+    icon | lowercase
+  }}</mat-icon>
+  {{ message }}
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" mat-dialog-close>
+    {{ buttonText }}
+  </button>
+</mat-dialog-actions>
